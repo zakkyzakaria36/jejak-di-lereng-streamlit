@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: jejak-di-lereng-app
+    env: docker
+    plan: free
+    dockerfile: ./Dockerfile
+    startCommand: streamlit run app.py --server.port=8501 --server.address=0.0.0.0
